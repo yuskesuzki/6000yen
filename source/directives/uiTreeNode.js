@@ -56,6 +56,14 @@
               attrs.$set('collapsed', val);
             });
 
+            scope.$on('angular-ui-tree:collapse-all', function () {
+              scope.collapsed = true;
+            });
+
+            scope.$on('angular-ui-tree:expand-all', function () {
+              scope.collapsed = false;
+            });
+
             dragStart = function (e) {
               if (!hasTouch && (e.button == 2 || e.which == 3)) {
                 // disable right click
