@@ -23,7 +23,8 @@
       $scope.tree1 = [{
         'id': 1,
         'title': 'tree1 - item1',
-        'nodes': []
+        'nodes': [],
+        'imgsrc': 'images/air.jpg'
       }, {
         'id': 2,
         'title': 'tree1 - item2',
