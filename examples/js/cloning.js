@@ -20,47 +20,44 @@
         });
       };
 
+      /**
+       * スケジュール欄に配置したアイコンの合計金額を戻す
+       */
+      $scope.getAmount = function() {
+        var result = 0;
+        for(var i=0; i < $scope.tree2.length; i++) {
+          result += $scope.tree2[i].price;
+        }
+        return result;
+
+      };
+
       $scope.tree1 = [{
         'id': 1,
-        'title': 'tree1 - item1',
+        'title': '航空チケット',
         'nodes': [],
-        'imgsrc': 'images/air.jpg'
+        'imgsrc': 'images/air.jpg',
+        'price': 6000
       }, {
         'id': 2,
-        'title': 'tree1 - item2',
+        'title': '六花亭 札幌本店',
         'nodes': [],
-        'imgsrc': 'images/food.jpg'
+        'imgsrc': 'images/food.jpg',
+        'price': 2000
       }, {
         'id': 3,
-        'title': 'tree1 - item3',
+        'title': '札幌オータムフェスト',
         'nodes': [],
-        'imgsrc': 'images/free.jpg'
+        'imgsrc': 'images/free.jpg',
+        'price': 1500
       }, {
         'id': 4,
-        'title': 'tree1 - item4',
+        'title': 'ノボテル札幌',
         'nodes': [],
-        'imgsrc': 'images/hotel.jpg'
+        'imgsrc': 'images/hotel.jpg',
+        'price': 1500
       }];
       $scope.tree2 = [
-      /*
-      {
-        'id': 1,
-        'title': 'tree2 - item1',
-        'nodes': [],
-      }, {
-        'id': 2,
-        'title': 'tree2 - item2',
-        'nodes': []
-      }, {
-        'id': 3,
-        'title': 'tree2 - item3',
-        'nodes': []
-      }, {
-        'id': 4,
-        'title': 'tree2 - item4',
-        'nodes': []
-      }
-      */
       ];
     }]);
 
