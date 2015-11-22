@@ -28,20 +28,25 @@
       }, {
         'id': 2,
         'title': 'tree1 - item2',
-        'nodes': []
+        'nodes': [],
+        'imgsrc': 'images/food.jpg'
       }, {
         'id': 3,
         'title': 'tree1 - item3',
-        'nodes': []
+        'nodes': [],
+        'imgsrc': 'images/free.jpg'
       }, {
         'id': 4,
         'title': 'tree1 - item4',
-        'nodes': []
+        'nodes': [],
+        'imgsrc': 'images/hotel.jpg'
       }];
-      $scope.tree2 = [{
+      $scope.tree2 = [
+      /*
+      {
         'id': 1,
         'title': 'tree2 - item1',
-        'nodes': []
+        'nodes': [],
       }, {
         'id': 2,
         'title': 'tree2 - item2',
@@ -54,7 +59,9 @@
         'id': 4,
         'title': 'tree2 - item4',
         'nodes': []
-      }];
+      }
+      */
+      ];
     }]);
 
 }());

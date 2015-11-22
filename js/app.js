@@ -26,7 +26,7 @@
           templateUrl: 'views/nodrop.html'
         })
         .otherwise({
-          redirectTo: '/basic-example'
+          redirectTo: '/cloning'
         });
     }]);
 })();
